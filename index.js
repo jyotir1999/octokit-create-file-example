@@ -17,16 +17,16 @@ const main = async () => {
       // replace the owner and email with your own details
       owner: "your-github-account",
       repo: "octokit-create-file-example",
-      path: "OUTPUT.md",
+      path: "OUTPUT.sql",
       message: "feat: Added OUTPUT.md programatically",
       content: contentEncoded,
       committer: {
         name: `Octokit Bot`,
-        email: "your-email",
+        email: "jyotirmaypathak22@gmail.com",
       },
       author: {
         name: "Octokit Bot",
-        email: "your-email",
+        email: "jyotirmaypathak22@gmail.com",
       },
     });
 
