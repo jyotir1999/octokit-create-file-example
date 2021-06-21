@@ -1,6 +1,6 @@
 const { Octokit } = require("@octokit/rest");
 const { Base64 } = require("js-base64");
-const fs = require("fs");
+// const fs = require("fs");
 
 require("dotenv").config();
 
@@ -15,17 +15,17 @@ const main = async () => {
 
     const { data } = await octokit.repos.createOrUpdateFileContents({
       // replace the owner and email with your own details
-      owner: "your-github-account",
+      owner: "jyotir1999",
       repo: "octokit-create-file-example",
       path: "OUTPUT.sql",
-      message: "feat: Added OUTPUT.md programatically",
+      message: "feat: Added OUTPUT.sql programatically",
       content: contentEncoded,
       committer: {
-        name: `Octokit Bot`,
+        name: "Jyotirmoy",
         email: "jyotirmaypathak22@gmail.com",
       },
       author: {
-        name: "Octokit Bot",
+        name: "Jyotirmoy",
         email: "jyotirmaypathak22@gmail.com",
       },
     });
